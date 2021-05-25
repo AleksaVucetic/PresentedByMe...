@@ -1,0 +1,3352 @@
+/* Mogu ja to! */
+/* _the font family is imported; */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+/* _creation of color variables; */
+:root {
+    --steel-teal: #588B8B;
+    --unbleached-silk: #FFD5C2;
+    --cadmium-orange: #F28F3B;
+    --cedar-chest: #C8553D;
+}
+
+/* _with '*', we set all containers to 'default' values; */
+* {
+    /* _the 'box-sizing' property defines how the width and height of an element are calculated: should they include padding and borders, or not; */
+    /* _'border-box' value indicates that the width and height properties (and min/max properties) include content, padding and border; */
+    box-sizing: border-box;
+
+    /* _the CSS margin properties are used to create space around elements, outside of any defined borders; */
+    margin: 0;
+
+    /* _the CSS padding properties are used to generate space around an element's content, inside of any defined borders; */
+    padding: 0;
+
+    /* _in order to set all those elements, we need to know how 'CSS - Box Model' works */
+}
+
+/* _styling the 'wrapper' class; */
+.wrapper {
+    /* height: initial; */
+    font-family: 'Arial Narrow';
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    background-image: linear-gradient(var(--cadmium-orange),
+                                      var(--steel-teal),
+                                      var(--cedar-chest),
+                                      var(--unbleached-silk));
+    overflow: auto;
+    box-shadow: 16px 16px 12px 0 rgba(255, 255, 255, 0.3) inset;
+}
+
+.wrapper a {
+    text-decoration: none;
+    color: var(--steel-teal);
+}
+
+/* _styling the '.aacta' div; */
+.aacta {
+    border-radius: 50px;
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the AACTA award logo; */
+.aacta .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -4%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.saturn' div; */
+.saturn {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the Saturn award logo; */
+.saturn .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 6%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.afi' div; */
+.afi {
+    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the AFI award logo; */
+.afi .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -1.2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.aafca' div; */
+.aafca {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the AAFCA award logo; */
+.aafca .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -4%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.eda' div; */
+.eda {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the AWFJ award logo; */
+.eda .award_img {
+    float: right;
+    width: 30%;
+    margin-top: .6%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.eddie' div; */
+.eddie {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--cedar-chest);
+}
+
+/* _syling the Eddie award logo; */
+.eddie .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -1.5%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.governors' div; */
+.governors {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the Governors award logo; */
+.governors .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2.5%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.gulid' div; */
+.gulid {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--steel-teal);
+}
+
+/* _syling the Gulid award logo; */
+.gulid .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 10%;
+}
+
+/* _styling the '.afcc' div; */
+.afcc {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--steel-teal);
+}
+
+/* _syling the AFCC award logo; */
+.afcc .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2.5%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.afca' div; */
+.afca {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--steel-teal);
+}
+
+/* _syling the AFCA award logo; */
+.afca .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.acca' div; */
+.acca {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--cedar-chest);
+    clear: both;
+}
+
+/* _syling the ACCA award logo; */
+.acca .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 6.5%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.bafta' div; */
+.bafta {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the BAFTA award logo; */
+.bafta .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2.5%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.ribbon' div; */
+.ribbon {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the Blue Ribbon award logo; */
+.ribbon .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.bsfc' div; */
+.bsfc {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the BSFC award logo; */
+.bsfc .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -0.7%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.bram' div; */
+.bram {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--cedar-chest);
+}
+
+/* _syling the Bram Stoker award logo; */
+.bram .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.tbif' div; */
+.tbif {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the TBIF award logo; */
+.tbif .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.bfca' div; */
+.bfca {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--steel-teal);
+}
+
+/* _syling the BFCA award logo; */
+.bfca .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.capri' div; */
+.capri {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the CAPRI award logo; */
+.capri .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.cofca' div; */
+.cofca {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+/* _syling the COFCA award logo; */
+.cofca .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 4%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.cfca' div; */
+.cfca {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the CFCA award logo; */
+.cfca .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.tciff' div; */
+.tciff {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the TCIFF award logo; */
+.tciff .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.caaf' div; */
+.caaf {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+/* _syling the CAAF award logo; */
+.caaf .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -1%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.chlotrudis' div; */
+.chlotrudis {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the Chlotrudis award logo; */
+.chlotrudis .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -1%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.cin' div; */
+.cin {
+    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the CinEuphoria award logo; */
+.cin .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 12%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.czech' div; */
+.czech {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the Czech Lions award logo; */
+.czech .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.dallas' div; */
+.dallas {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+/* _syling the Dallas award logo; */
+.dallas .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 0.5%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.czech' div; */
+.danish {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the Czech Lions award logo; */
+.danish .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.ddd' div; */
+.ddd {
+    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+/* _syling the David di Donaetllo award logo; */
+.ddd .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -1%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.ddd' div; */
+.deauville {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--cedar-chest);
+}
+
+/* _syling the David di Donaetllo award logo; */
+.deauville .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 1%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.dfcs' div; */
+.dfcs {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--steel-teal);
+}
+
+/* _syling the DFCS award logo; */
+.dfcs .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.dff' div; */
+.dff {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--steel-teal);
+}
+
+/* _syling the DFF award logo; */
+.dff .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.dfcca' div; */
+.dfcca {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the DFCCA award logo; */
+.dfcca .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -0.5%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.eapa' div; */
+.eapa {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--steel-teal);
+}
+
+/* _syling the EAPA award logo; */
+.eapa .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 0%;
+    max-width: 300px;
+    margin-right: 3%;;
+}
+
+/* _styling the '.eauk' div; */
+.eauk {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--steel-teal);
+}
+
+/* _syling the EAUK award logo; */
+.eauk .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 11%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.esbfa' div; */
+.esbfa {
+    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+/* _syling the ESBFA award logo; */
+.esbfa .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.fisa' div; */
+.fisa {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the FIS award logo; */
+.fisa .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -1%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.ffcca' div; */
+.ffcca {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+/* _syling the FFCC award logo; */
+.ffcca .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 3.5%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.fdp' div; */
+.fdp {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the FdP award logo; */
+.fdp .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.ga' div; */
+.ga {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the Gaudí award logo; */
+.ga .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.gda' div; */
+.gda {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cedar-chest);
+}
+
+/* _syling the GD award logo; */
+.gda .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 2.5%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.gsa' div; */
+.gsa {
+    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--steel-teal);
+}
+
+/* _syling the GS award logo; */
+.gsa .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 7%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.hf' div; */
+.hf {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+/* _syling the HF award logo; */
+.hf .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.hfa' div; */
+.hfa {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the HF award logo; */
+.hfa .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 11%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.hollywood' div; */
+.hollywood {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--cedar-chest);
+}
+
+/* _syling the HF award logo; */
+.hollywood .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 0.5%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.hugo' div; */
+.hugo {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the HUGO award logo; */
+.hugo .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.ignsm' div; */
+.ignsm {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+/* _syling the IGNSM award logo; */
+.ignsm .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 0.5%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.ifja' div; */
+.ifja {
+    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the IFJ award logo; */
+.ifja .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.icsa' div; */
+.icsa {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+/* _syling the ICS award logo; */
+.icsa .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.inoca' div; */
+.inoca {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the INOC award logo; */
+.inoca .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.ioma' div; */
+.ioma {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+/* _syling the IOM award logo; */
+.ioma .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.kcfcca' div; */
+.kcfcca {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cedar-chest);
+}
+
+/* _syling the INOC award logo; */
+.kcfcca .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 0.5%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.lvfcsa' div; */
+.lvfcsa {
+    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cedar-chest);
+}
+
+/* _syling the LVFCS award logo; */
+.lvfcsa .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.lccfa' div; */
+.lccfa {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+/* _syling the LCCF award logo; */
+.lccfa .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 1.5%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.lafcaa' div; */
+.lafcaa {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cedar-chest);
+}
+
+/* _syling the LAFCA award logo; */
+.lafcaa .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -1.5%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.mfc' div; */
+.mfc {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--cedar-chest);
+}
+
+/* _syling the MFC award logo; */
+.mfc .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.mtv' div; */
+.mtv {
+    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cedar-chest);
+}
+
+/* _syling the MTV award logo; */
+.mtv .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.niff' div; */
+.niff {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+/* _syling the NIFF award logo; */
+.niff .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.ntfca' div; */
+.ntfca {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cedar-chest);
+}
+
+/* _syling the NTFCA award logo; */
+.ntfca .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.ofcca' div; */
+.ofcca {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+/* _syling the OFCC award logo; */
+.ofcca .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.ofta' div; */
+.ofta {
+    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the OFT award logo; */
+.ofta .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 4%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.ofcsa' div; */
+.ofcsa {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+/* _syling the OFCS award logo; */
+.ofcsa .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 10%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.psiff' div; */
+.psiff {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the PSIFF award logo; */
+.psiff .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.pcc' div; */
+.pcc {
+    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+
+/* _syling the PCC award logo; */
+.pcc .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.pfcsa' div; */
+.pfcsa {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the PFCS award logo; */
+.pfcsa .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -0.5%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.ra' div; */
+.ra {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+
+/* _syling the Rembrandt award logo; */
+.ra .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.rhcha' div; */
+.rhcha {
+    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the RHCH award logo; */
+.rhcha .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 0%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.riff' div; */
+.riff {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+
+/* _syling the RIFF award logo; */
+.riff .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.sfiff' div; */
+.sfiff {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the SFIFF award logo; */
+.sfiff .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2.5%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.sbiff' div; */
+.sbiff {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+
+/* _syling the SBIFF award logo; */
+.sbiff .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.sffwa' div; */
+.sffwa {
+    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the SFFWA award logo; */
+.sffwa .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 0%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.sa' div; */
+.sa {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+
+/* _syling the Scream award logo; */
+.sa .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 6%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.sesc' div; */
+.sesc {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the SESC award logo; */
+.sesc .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.sa' div; */
+.sfx {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+
+/* _syling the Scream award logo; */
+.sfx .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 5.5%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.swc' div; */
+.swc {
+    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+
+/* _syling the SWC award logo; */
+.swc .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.sitges' div; */
+.sitges {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the Sitges award logo; */
+.sitges .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 0%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.sff' div; */
+.sff {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+
+/* _syling the SFF award logo; */
+.sff .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.sfcaa' div; */
+.sfcaa {
+    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the SFCA award logo; */
+.sfcaa .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -1.5%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.sdff' div; */
+.sdff {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+
+/* _syling the SDFF award logo; */
+.sdff .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.tfcaa' div; */
+.tfcaa {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+/* _syling the TFCA award logo; */
+.tfcaa .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -1.5%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.ufcaa' div; */
+.ufcaa {
+    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+
+/* _syling the UFCA award logo; */
+.ufcaa .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 0%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.vesa' div; */
+.vesa {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+/* _syling the VES award logo; */
+.vesa .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -2%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.wdcafcaa' div; */
+.wdcafcaa {
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--unbleached-silk);
+}
+
+
+/* _syling the WDCAFCA award logo; */
+.wdcafcaa .award_img {
+    float: right;
+    width: 30%;
+    margin-top: 0%;
+    max-width: 300px;
+    margin-right: 3%;
+}
+
+/* _styling the '.wga' div; */
+.wga {
+    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 70%;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: right;
+    margin-bottom: 3%;
+    background-color: var(--cadmium-orange);
+}
+
+/* _syling the WG award logo; */
+.wga .award_img {
+    float: right;
+    width: 30%;
+    margin-top: -1%;
+    margin-right: 3%;
+    max-width: 300px;
+}
+
+/* ---------------------- _the following code is applied to every award div'; ---------------------- */
+
+/* _styling the separator; */
+.separator {
+    float: left;
+    clear: both;
+    width: 100%;
+    font-family: 'Pirata One';
+    font-size: 3em;
+    margin-bottom: 3%;
+    color: #ffffff;
+    text-shadow: .0539215696em .0539215686em 0em var(--cedar-chest),
+                 .15em .15em 0em #000000;
+    border-bottom: 1px white solid;
+}
+
+/* _styling the table inside divs; */
+.awards {
+    margin: 2%;
+    float: left;
+    border-bottom: 2px #000000 solid;
+    border-top: 1px #000000 solid;
+    border-left: 1px #000000 solid;
+    border-right: 1px #000000 solid;
+}
+
+
+/* _adding borders to table cells; */
+.awards td {
+    border: 1px #000000 solid;
+    border-right: none;
+    border-bottom: none;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+/* _styling the span of '.award_outcome' class; styling the name of the award; */
+.awards .award_outcome span {
+    font-size: .7em;
+    font-family: 'Libre Baskerville';
+    color: var(--steel-teal);
+    font-weight: bold;
+}
+
+/* _styling the span of '.award_desription' class; styling the name of the film; */
+.awards .award_description span {
+    color: var(--cedar-chest);
+    font-family: 'Libre Baskerville';
+    font-size: .9em;
+}
+
+/* _adding borders to table's last cell; */
+.awards td:nth-last-child(1) {
+    border-right: 1px #000000 solid;
+}
+/* ---------------------- _the previous code is applied to every award div'; ---------------------- */
+
+.to-the-top {
+    clear: both;
+    display: flex;
+    justify-content: flex-start;
+    top: 80%;
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+    border-radius: 50px;
+    width: auto;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 1.5%;
+    height: auto;
+    float: left;
+    margin-bottom: 3%;
+    background-color: var(--steel-teal);
+    position: fixed;
+    border: #ffffff 1px solid;
+}
+
+.to-the-top a {
+    text-decoration: none;
+    font-family: 'Pirata One';
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.to-the-top:hover {
+    background-color: var(--unbleached-silk);
+}
+
+.to-the-top:hover a {
+    color: var(--steel-teal);
+}
+
+/* _media queries; */
+@media screen and (max-width: 1156px) {
+    .wrapper td {
+        font-size: .9em;
+    }
+    
+    .wrapper td span {
+        font-size: .999em;
+    }
+
+    .wrapper h3 {
+        font-size: .999em;
+    }
+}
+
+@media screen and (max-width: 996px) {
+    .wrapper td {
+        font-size: .76em;
+    }
+    
+    .wrapper td span {
+        font-size: .798em;
+    }
+
+    .wrapper h3 {
+        font-size: .999em;
+        padding-left: 2%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .aacta {
+        border-radius: 20px;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aacta .award_img {
+        margin-top: auto
+    }
+    .saturn {
+        border-radius: 20px;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .saturn .award_img {
+        margin-top: auto
+    }
+    .afi {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .afi .award_img {
+        margin-top: auto
+    }
+    .aafca {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aafca .award_img {
+        margin-top: auto
+    }
+    .eda {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .eda .award_img {
+        margin-top: auto
+    }
+    .eddie {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .eddie .award_img {
+        margin-top: auto
+    }
+    .governors {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .governors .award_img {
+        margin-top: auto
+    }
+    .gulid {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gulid .award_img {
+        margin-top: auto
+    }
+    .afcc {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .afcc .award_img {
+        margin-top: auto
+    }
+    .afca {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .afca .award_img {
+        margin-top: auto
+    }
+    .acca {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .acca .award_img {
+        margin-top: auto
+    }
+    .bafta {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bafta .award_img {
+        margin-top: auto
+    }
+    .ribbon {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ribbon .award_img {
+        margin-top: auto
+    }
+    .bsfc {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bsfc .award_img {
+        margin-top: auto
+    }
+    .bram {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bram .award_img {
+        margin-top: auto
+    }
+    .tbif {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tbif .award_img {
+        margin-top: auto
+    }
+    .bfca {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bfca .award_img {
+        margin-top: auto
+    }
+    .capri {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .capri .award_img {
+        margin-top: auto
+    }
+    .cofca {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cofca .award_img {
+        margin-top: auto
+    }
+    .cfca {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cfca .award_img {
+        margin-top: auto
+    }
+    .tciff {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tciff .award_img {
+        margin-top: auto
+    }
+    .caaf {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .caaf .award_img {
+        margin-top: auto
+    }
+    .chlotrudis {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .chlotrudis .award_img {
+        margin-top: auto
+    }
+    .cin {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cin .award_img {
+        margin-top: auto
+    }
+    .czech {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .czech .award_img {
+        margin-top: auto
+    }
+    .dallas {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dallas .award_img {
+        margin-top: auto
+    }
+    .danish {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .danish .award_img {
+        margin-top: auto
+    }
+    .ddd {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ddd .award_img {
+        margin-top: auto
+    }
+    .deauville {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .deauville .award_img {
+        margin-top: auto
+    }
+    .dfcs {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dfcs .award_img {
+        margin-top: auto
+    }
+    .dff {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dff .award_img {
+        margin-top: auto
+    }
+    .dfcca {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dfcca .award_img {
+        margin-top: auto
+    }
+    .eapa {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .eapa .award_img {
+        margin-top: auto
+    }
+    .eauk {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .eauk .award_img {
+        margin-top: auto
+    }
+    .esbfa {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .esbfa .award_img {
+        margin-top: auto
+    }
+    .fisa {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fisa .award_img {
+        margin-top: auto
+    }
+    .ffcca {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ffcca .award_img {
+        margin-top: auto
+    }
+    .fdp {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fdp .award_img {
+        margin-top: auto
+    }
+    .ga {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ga .award_img {
+        margin-top: auto
+    }
+    .gda {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gda .award_img {
+        margin-top: auto
+    }
+    .gsa {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gsa .award_img {
+        margin-top: auto
+    }
+    .hf {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hf .award_img {
+        margin-top: auto
+    }
+    .hfa {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hfa .award_img {
+        margin-top: auto
+    }
+    .hollywood {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hollywood .award_img {
+        margin-top: auto
+    }
+    .hugo {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hugo .award_img {
+        margin-top: auto
+    }
+    .ignsm {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ignsm .award_img {
+        margin-top: auto
+    }
+    .ifja {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ifja .award_img {
+        margin-top: auto
+    }
+    .icsa {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icsa .award_img {
+        margin-top: auto
+    }
+    .inoca {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .inoca .award_img {
+        margin-top: auto
+    }
+    .ioma {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ioma .award_img {
+        margin-top: auto
+    }
+    .kcfcca {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .kcfcca .award_img {
+        margin-top: auto
+    }
+    .lvfcsa {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lvfcsa .award_img {
+        margin-top: auto
+    }
+    .lccfa {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lcffa .award_img {
+        margin-top: auto
+    }
+    .lafcaa {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lafcaa .award_img {
+        margin-top: auto
+    }
+    .mfc {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mfc .award_img {
+        margin-top: auto
+    }
+    .mtv {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mtv .award_img {
+        margin-top: auto
+    }
+    .niff {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .niff .award_img {
+        margin-top: auto
+    }
+    .ntfca {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ntfca .award_img {
+        margin-top: auto
+    }
+    .ofcca {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ofcca .award_img {
+        margin-top: auto
+    }
+    .ofta {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ofta .award_img {
+        margin-top: auto
+    }
+    .ofcsa {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ofcsa .award_img {
+        margin-top: auto
+    }
+    .psiff {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .psiff .award_img {
+        margin-top: auto
+    }
+    .pcc {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pcc .award_img {
+        margin-top: auto
+    }
+    .pfcsa {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pfcsa .award_img {
+        margin-top: auto
+    }
+    .ra {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ra .award_img {
+        margin-top: auto
+    }
+    .rhcha {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .rhcha .award_img {
+        margin-top: auto
+    }
+    .riff {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .riff .award_img {
+        margin-top: auto
+    }
+    .sfiff {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sfiff .award_img {
+        margin-top: auto
+    }
+    .sbiff {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sbiff .award_img {
+        margin-top: auto
+    }
+    .sffwa {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sffwa .award_img {
+        margin-top: auto
+    }
+    .sa {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sa .award_img {
+        margin-top: auto
+    }
+    .sesc {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sesc .award_img {
+        margin-top: auto
+    }
+    .sfx {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sfx .award_img {
+        margin-top: auto
+    }
+    .swc {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .swc .award_img {
+        margin-top: auto
+    }
+    .sitges {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sitges .award_img {
+        margin-top: auto
+    }
+    .sff {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sff .award_img {
+        margin-top: auto
+    }
+    .sfcaa {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sfcaa .award_img {
+        margin-top: auto
+    }
+    .sdff {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sdff .award_img {
+        margin-top: auto
+    }
+    .tfcaa {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tfcaa .award_img {
+        margin-top: auto
+    }
+    .ufcaa {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ufcaa .award_img {
+        margin-top: auto
+    }
+    .vesa {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .vesa .award_img {
+        margin-top: auto
+    }
+    .wdcafcaa {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wdcafcaa .award_img {
+        margin-top: auto
+    }
+    .wga {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wga .award_img {
+        margin-top: auto
+    }
+}

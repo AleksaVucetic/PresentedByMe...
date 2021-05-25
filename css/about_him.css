@@ -1,0 +1,148 @@
+/* Mogu ja to! */
+/* _the font family is imported; */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+/* _creation of color variables; */
+:root {
+    --steel-teal: #588B8B;
+    --unbleached-silk: #FFD5C2;
+    --cadmium-orange: #F28F3B;
+    --cedar-chest: #C8553D;
+}
+
+/* _with '*', we set all containers to 'default' values; */
+* {
+    /* _the 'box-sizing' property defines how the width and height of an element are calculated: should they include padding and borders, or not; */
+    /* _'border-box' value indicates that the width and height properties (and min/max properties) include content, padding and border; */
+    box-sizing: border-box;
+
+    /* _the CSS margin properties are used to create space around elements, outside of any defined borders; */
+    margin: 0;
+
+    /* _the CSS padding properties are used to generate space around an element's content, inside of any defined borders; */
+    padding: 0;
+
+    /* _in order to set all those elements, we need to know how 'CSS - Box Model' works */
+}
+
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.parallax_image1, .parallax_image2, .parallax_image3 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.parallax_image1 {
+    background-image: url(../images/Parallax1.jpg);
+    min-height: 100%;
+}
+.parallax_image2 {
+    background-image: url(../images/Parallax2.jpg);
+    min-height: 50%; 
+}
+
+.parallax_image3 {
+    background-image: url(../images/Parallax3.jpg);
+    min-height: 70%;
+}
+
+.section {
+    text-align: center;
+    padding: 1% 2%
+}
+
+.section_1 {
+    background-color: var(--steel-teal);
+    color: #ffffff;
+    font-family: 'Libre Baskerville';
+}
+
+.section_2 {
+    background-color: var(--cadmium-orange);
+    color: #ffffff;
+    font-family: 'Libre Baskerville';
+}
+
+.section_3 {
+    background-color: var(--unbleached-silk);
+    color: var(--steel-teal);
+    font-family: 'Libre Baskerville';
+}
+
+.parallax_text {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+}
+
+.parallax_text > p {
+    padding: 2%;
+    background-color: var(--cedar-chest);
+    border-radius: 10px;
+    color: #ffffff;
+    box-shadow: 5px 5px 6px #ffffff;
+    font-size: 2em;
+    text-shadow: 3px 3px 1px #000000;
+}
+
+.parallax_text > a {
+    background-color: var(--steel-teal);
+    border-radius: 10px;
+    /* font-family: 'Arial-Narrow'; */
+    padding: 0.5%;
+    box-shadow: 5px 5px 6px #ffffff;
+    text-decoration: none;
+    color: #000;
+}
+
+.parallax_text > a:nth-child(odd) {
+    background-color: var(--cadmium-orange);
+}
+
+.parallax_text > a:hover {
+    box-shadow: 5px 5px 6px #797979;
+}
+
+@media screen and (max-width: 768px) {
+    .parallax_text {
+        position: absolute;
+        top: 55%;
+        width: 100%;
+        text-align: center;
+        font-size: 1em;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .parallax_text a {
+        margin-bottom: 3%;
+    }
+}
+
+@media(max-width: 568px){
+    .parallax_image1, .parallax_image2, .parallax_image3 {
+        background-attachment: scroll;
+    }
+}

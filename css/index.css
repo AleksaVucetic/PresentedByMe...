@@ -1,0 +1,946 @@
+/* Mogu ja to! */
+/* _the font family is imported; */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+/* _creation of color variables; */
+:root {
+    --steel-teal: #588B8B;
+    --unbleached-silk: #FFD5C2;
+    --cadmium-orange: #F28F3B;
+    --cedar-chest: #C8553D;
+}
+
+/* _with '*', we set all containers to 'default' values; */
+* {
+    /* _the 'box-sizing' property defines how the width and height of an element are calculated: should they include padding and borders, or not; */
+    /* _'border-box' value indicates that the width and height properties (and min/max properties) include content, padding and border; */
+    box-sizing: border-box;
+
+    /* _the CSS margin properties are used to create space around elements, outside of any defined borders; */
+    margin: 0;
+
+    /* _the CSS padding properties are used to generate space around an element's content, inside of any defined borders; */
+    padding: 0;
+
+    /* _in order to set all those elements, we need to know how 'CSS - Box Model' works */
+}
+
+body {
+    font-family: 'Pirata One', 'sans-serif';
+}
+
+/* ----------------------------------- _styling of the 'header' container ('.logo', '.menu'); ----------------------------------- */
+.header {
+    /* _display of '.logo' and '.menu' containers is grid; */
+    /* _the 'display' property specifies the display behavior (the type of rendering box) of an element; */
+    /* _'display: grid' displays an element as a block-level grid container; */
+    display: grid;
+
+    /* _the grid-template-columns property specifies the number (and the widths) of columns in a grid layout; */
+    /* _in my case, I have two containers in my grid; */
+    grid-template-columns: 25% 75%;
+}
+
+/* _styling of the logo image; */
+.header .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* _styling of the '.menu'; */
+.header .menu {
+    height: 100%;
+    background-color: var(--steel-teal);
+}
+
+/* _styling the list inside '.menu' container; */
+.header .menu ul {
+    margin-left: 7%;
+    margin-right: 5%;
+    margin-top: 3.3%;
+
+    /* _'list-syle-type: none' leaves out bullets; */
+    list-style-type: none;
+}
+
+/* _styling of the list elements inside '.menu'; */
+.header .menu ul li{
+    /* _'display: inline-block' displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values; */
+    display: inline-block;
+
+    /* _the line-height property specifies the height of a line; */
+    line-height: 1.6em;
+
+    /* _the font-size property sets the size of a font; */
+    font-size: 1.6em;
+
+    padding: 0 1.5%;
+}
+
+/* _styling of the anchor tag list elements inside '.menu'; */
+.header .menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 1px 1px #000000;
+}
+
+/* _styling even elements of my list; */
+.header .menu ul li:nth-child(even) a {
+    color:var(--unbleached-silk);
+}
+
+/* _styling the span; */
+.header .menu ul li a span {
+    text-shadow: 0 0 0;
+}
+
+/* _styling the hover effect; */
+.header .menu ul li:hover {
+    border-bottom: #ffffff 2px solid;
+    border-radius: 25px;
+}
+
+/* _styling the hover effect with an animation; */
+.header .menu ul li:hover a {
+    animation: warning 1.5s ease-in infinite;
+}
+
+/* _styling the hover effect on span elements with an animation; */
+.header .menu ul li:hover a span {
+    animation: warning 1.5s ease-in infinite;
+}
+
+/* _styling the hover effects for even elements; */
+.header .menu ul li:nth-child(even):hover {
+    border-bottom: var(--unbleached-silk) 2px solid;
+}
+
+/* _creating 'warning' animation */
+@keyframes warning {
+    0% {
+        text-shadow: 0px 0px 4px #ffffff;
+    }
+    50% {
+        text-shadow: 0px 0px 20px #ffffff;
+    }
+    100% {
+        text-shadow: 0px 0px 4px #ffffff;
+    }
+}
+
+/* _styling the dropdown button; */
+.header .menu ul li .dropdown .dropbtn {
+    background-color: var(--steel-teal);
+    color: var(--unbleached-silk);
+    font-size: 1.1em;
+    font-family: 'Pirata One';
+    border: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #000000;
+}
+
+/* _styling the dropdown button span; */
+.header .menu ul li .dropdown .dropbtn span{
+    text-shadow: 0 0 0;
+}
+
+/* _the container 'dropdown' is needed to position the dropdown content; */
+.header .menu ul li .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* _dropdown content is hidden by default; */
+.header .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 213, 194, 0.9);
+    min-width: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 25px;
+    width: auto;
+}
+
+/* _links inside the dropdown menu; */
+.header .menu ul li .dropdown .dropdown-content .item {
+    color: #000000;
+    font-family: 'Pirata One';
+    text-align: center;
+    padding: 5%;
+    font-size: 0.7em;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px #ffffff solid;
+    border-radius: 8px;
+}
+
+/* _styling the drop-down items on hover; */
+.header .menu ul li .dropdown .dropdown-content .item:hover {
+    background-color: rgba(255, 213, 194, 1);
+    border: #588B8B 1px solid;
+    box-shadow: 2px 2px 8px var(--steel-teal);
+}
+
+/* _show the dropdown menu on hover */
+.header .menu ul li .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.content-container {
+    background-image: linear-gradient(45deg, #ffffff 60%, var(--cadmium-orange));
+    overflow: auto;
+}
+
+/* -------------------------------------------------- _styling of the 'content'; -------------------------------------------------- */
+.content {
+    border-radius: 8px;
+    height: auto;
+    width: 78%;
+    float: right;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+/* _styling the image within 'content' container; */
+.content .anne {
+    float: left;
+    width: 15.9398281%;
+    max-width: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* _styling the 'article' container within the 'content' container; */
+.content .article {
+    width: 83%;
+    float: right;
+    margin-bottom: 5%;
+}
+
+/* _styling the 'content' headings; */
+.content .article h1 {
+    font-family: 'Libre Baskerville';
+    text-align: center;
+    font-size: 4.3125em;
+    text-transform: uppercase;
+    text-shadow: .0539215696em .0539215686em 0em #000000;
+    color: var(--cedar-chest);
+}
+
+/* _styling the 'content' headings; */
+.content .article h3 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 4.0125em;
+    color: #000000;
+}
+
+/* _styling the aricle in 'content' container; */
+.content .article p {
+    font-family: 'Libre Baskervile';
+    padding-right: 2%;
+    text-align: center;
+    padding-top: 2.5%;
+    font-size: 1.3015em;
+}
+
+/* _styling the spans in 'content' container; */
+.content .article p a {
+     /* _'font-variant' property lets us do this; */
+    font-variant: small-caps;
+ 
+    font-style: italic;
+    color: var(--cadmium-orange);
+    text-decoration: none;
+    font-weight: 550;
+    text-shadow: .02em .02em 0em var(--cedar-chest);
+}
+
+/* ----------------------------------- _styling the 'button'; ----------------------------------- */
+.content .button {
+    width:100%;                                                
+    clear: both;
+    background-color: var(--steel-teal);
+    border-radius: 8px;
+    box-shadow: 0.1em -0.1em 0.6em hsl(255, 0%, 30%);
+    border: 1px #ffffff solid;
+}
+
+/* _you know transitions and how they work; */
+.content .button:hover {
+    border: 1px #000000 solid;
+    box-shadow: 0.1em -0.1em 0.6em var(--steel-teal);
+    background-color: var(--cadmium-orange);
+    transition: all 0.3s ease-in 0s;
+}
+
+.content .button a .inside-button {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.content .button a {
+    text-decoration: none;
+    color: var(--cadmium-orange);
+    font-weight: 750;
+    font-size: 1.356em;
+    font-family: 'Libre Baskerville';
+    text-align: center;
+    text-shadow: 1px 1px 0 #000000;
+}
+
+.content .button a:hover {
+    color: #000000;
+    transition: color 0.3s ease-in 0s;
+}
+
+.content .button a:hover span{
+    color: var(--steel-teal);
+    transition: color 0.3s ease-in 0s;
+}
+
+.content .button a span {
+    color: #ffffff;
+    font-weight: normal;
+    font-family: 'Pirata One';
+    font-size: 2.695em;
+    text-shadow: 1.5px 1.5px 0 #000000;
+}
+/* ----------------------------------- _styling the 'button'; ----------------------------------- */
+
+/* ----------------------------- _styling of the 'sidebar' content; ----------------------------- */
+.sidebar {
+    height: auto;
+    border-radius: 8px;
+    width: 15.708333%;
+    float: left;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-bottom: 1.5%;
+    background-color: var(--cadmium-orange);
+    padding: 0.7%;
+    box-shadow: 0.1em -0.1em 0.6em hsl(255, 0%, 30%);
+    border: 1px #ffffff solid;
+    background-image: linear-gradient(135deg, var(--cadmium-orange) 60%, #ffffff 75%);
+}
+
+/* _styling of the 'sidebar' heading; */
+.sidebar h1 {
+    font-family: 'Libre Baskerville';
+    text-align: center;
+    color: var(--cedar-chest);
+    text-shadow: 0.1em 0.1em 0.6em #ffffff;
+}
+
+/* _styling of the 'sidebar' list container; */
+.sidebar .top-three-movies ul {
+    margin-top: 5%;
+    list-style-type: none;
+}
+
+/* _styling of the 'sidebar' list items; */
+.sidebar .top-three-movies ul li {
+    margin-bottom: 5%;
+}
+
+/* _styling of the 'sidebar' anchor tag; */
+.sidebar .top-three-movies ul li a {
+    /* _'text-align: center' aligns text to the center in relation to parent containcer; */
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Libre Baskerville';
+    color: #ffffff;
+}
+
+/* _styling the 'special-one' movie; */
+.sidebar .top-three-movies ul li .special-one {
+    color: var(--cadmium-orange);
+    font-weight: 700;
+}
+
+/* _styling the images with an animation on the sidebar; */
+.sidebar .top-three-movies ul li a img:hover {
+    animation-name: swing;
+
+    /* _the animation-duration property defines how long time an animation should take to complete; */
+    animation-duration: 0.1s;
+
+    /* _the animation-iteration-count property specifies the number of times an animation should run; */
+    animation-iteration-count: 3;
+
+    /* _the 'animation-timing-function' property specifies the speed curve of the animation; */
+    /* _'animation-timing-funciton: ease-in' specifies an animation with a slow start; */
+    animation-timing-function: ease-in;
+}
+
+/* _styling of the 'sidebar' images; */
+.sidebar .top-three-movies ul li a img {
+    max-width: 80%;
+    margin-right: 9.9%;
+    margin-left: 9.9%;
+}
+
+/* _styling of the 'sidebar' text; */
+.sidebar .top-three-movies ul li a p {
+    margin-top: 0.5%;
+}
+
+/* _'@keyframes' creates animation; */
+/* _vendor prefixes:
+    -webkit- - Google Chrome, Safari, Android Browser; 
+    -moz- - Firefox;
+    -o- - Opera; 
+    -ms- - Internet Explorer, Edge; 
+    -khtml- - Konqueror; */
+@keyframes swing {
+    from {
+        -webkit-transform: rotate(2deg);
+        -moz-transform: rotate(2deg);
+        -o-transform: rotate(2deg);
+        -ms-transform: rotate(2deg);
+        -khtml-transform: rotate(2deg);
+    }
+    20% {
+        -webkit-transform: rotate(4deg);
+        -moz-transform: rotate(4deg);
+        -o-transform: rotate(4deg);
+        -ms-transform: rotate(4deg);
+        -khtml-transform: rotate(4deg);
+    }
+    50% {
+        -webkit-transform: rotate(7deg);
+        -moz-transform: rotate(7deg);
+        -o-transform: rotate(7deg);
+        -ms-transform: rotate(7deg);
+        -khtml-transform: rotate(7deg);
+    }
+    80% {
+        -webkit-transform: rotate(4deg);
+        -moz-transform: rotate(4deg);
+        -o-transform: rotate(4deg);
+        -ms-transform: rotate(4deg);
+        -khtml-transform: rotate(4deg);
+    }
+    to {
+        -webkit-transform: rotate(2deg);
+        -moz-transform: rotate(2deg);
+        -o-transform: rotate(2deg);
+        -ms-transform: rotate(2deg);
+        -khtml-transform: rotate(2deg);
+    }
+}
+
+/* -------------------------- _styling the '.spinning-movies' container; -------------------------- */
+.spinning-movies {
+    width: 100%;
+    float: left;
+    clear: both;
+    height: auto;
+    min-height: 450px;
+    background-color: var(--unbleached-silk);
+    box-shadow: 5px 5px 5px inset var(--unbleached-silk), 3px 3px inset #000000, 8px 8px 8px inset #ffffff;
+}
+
+/* _fitting the image into the '.container'; */
+.spinning-movies .container img {
+    width: 100%;
+    height: auto;
+}
+
+/* _this is the static part of spinning container; this part holds another container that actually spins; */
+.spinning-movies .container {
+    width: 20%;
+    position: relative;
+    height: auto;
+    float: left;
+
+    /* _the perspective property is used to give a 3D-positioned element some perspective; this property defines how far the object is away from the user; a lower value will result in a more intensive 3D effect than a higher value; */
+    perspective: 700px;
+
+    margin-top: 2%;
+    margin-left: 6.5%;
+    margin-right: 6.5%;
+}
+
+/* _this is the spinning part of spinning container; 2 containers within this one (.film-front and .film-back) will spin in here;*/
+.spinning-movies .container .film {
+    width: 100%;
+    height: 23.7em;
+
+    /* _the 'transform-style' property specifies how NESTED ELEMENTS are rendered in 3D space; */
+    /* _this is why 'transform-style' is always applied to the parent element; */
+    /* _'transform-style: preserve-3d' specifies that child elements will preserve its 3D position; */
+    transform-style: preserve-3d;
+
+    transition: 1.5s;
+}
+
+/* _as previously said, this is the part that spins; */
+.spinning-movies .container:hover .film {
+    transform: rotateY(180deg);
+}
+
+/* _styling the front side of spinning container; */
+/* _vendor prefixes:
+    -webkit- - Google Chrome, Safari, Android Browser; 
+    -moz- - Firefox;
+    -o- - Opera; 
+    -ms- - Internet Explorer, Edge; 
+    -khtml- - Konqueror; */
+.spinning-movies .container .film .film-front {
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+}
+
+/* _styling the back side of spinning container; */
+.spinning-movies .container .film .film-back {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background-color: #808080;
+    background-image: linear-gradient(#ffffff 45%, var(--cadmium-orange) 90%);
+    height: 100%;
+    width: 80%;
+    padding-top: 7%;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: absolute;
+    text-align: center;
+    border: 1.5px #000000 solid;
+}
+
+/* _styling headings inside the back side of spinning container; */
+.spinning-movies .container .film .film-back h2 {
+    font-family: 'Libre Baskerville';
+    color: var(--cadmium-orange);
+    margin-bottom: 10%;
+    text-shadow: 1.5px 1.5px 5px #808080;
+}
+
+/* _styling text inside the back side of spinning container; */
+.spinning-movies .container .film .film-back div p {
+    font-family: 'Libre Baskerville';
+    color: var(--cedar-chest);
+    margin-bottom: 10%;
+    margin-top: 10%;
+    color: #000000;
+}
+
+/* _styling text inside the back side of spinning container; */
+.spinning-movies .container .film .film-back div p span{
+    font-family: 'Pirata One';
+    color: var(--cedar-chest);
+    font-size: 1.54em;
+    text-shadow: 1px 1px #000000;
+}
+
+/* _styling <hr> line inside the back side of spinning container; */
+.spinning-movies .container .film .film-back div hr {
+    /* border: var(--cadmium-orange) 2px solid; */
+    border-radius: 20px;
+}
+
+/* _styling the footer; */
+.footer {
+    background-color: var(--cedar-chest);
+    width: 100%;
+    height: auto;
+    float: left;
+    clear: both;
+    padding: 2%;
+}
+
+/* _styling the footer paragraph; */
+.footer p {
+    text-align: center;
+    font-family: 'Arial Narrow';
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 1.5%;
+}
+
+/* _styling the span inside footer paragraph; */
+.footer p span {
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 0.8px 0.8px #000000;
+    font-size: 1.04em;
+}
+
+/* _styling the imaginary logo; */
+.footer .imaginary-logo {
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: 'Arial Narrow';
+    text-align: center;
+    width: 35%;
+    margin: auto;
+    margin-bottom: 1.5%;
+}
+
+/* _styling the '.btn' div; */
+.footer .btn {
+    width: 9%;
+    height: auto;
+    margin: auto;
+}
+
+/* _styling image inside the '.btn' container; */
+.footer .btn img {
+    width: 100%;
+}
+
+/* ----------------------------------- _styling the scrollbar; ----------------------------------- */
+::-webkit-scrollbar {
+    width: min-content;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, var(--steel-teal), transparent);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, var(--cedar-chest), transparent);
+}
+/* ----------------------------------- _styling the scrollbar; ----------------------------------- */
+
+
+/* _media queries; */
+@media screen and (max-width: 1316px) {
+    .header .menu ul li{
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    .content .article h1 {
+        font-size: 3.8em;
+    }
+
+    .content .article h3 {
+        font-size: 3.5357em;
+    }
+
+    .content .article p {
+        font-size: 1.28em;
+    }
+
+    .header .dropdown .dropdown-content {
+        min-width: 157px;
+    }
+
+    .spinning-movies .container .film .film-back {
+        height: 89%;
+    }
+
+    .spinning-movies .container .film .film-back div p {
+        margin-bottom: 8%;
+        margin-top: 8%;
+    }
+}
+
+@media screen and (max-width: 1236px) {
+    .header .menu ul li {
+        font-size: 1.4em;
+        line-height: 1.4em;
+    }
+
+    .header .dropdown .dropdown-content {
+        min-width: 148px;
+    }
+    
+    .content .article {
+        margin-bottom: 2%;
+    }
+
+    .content .article p {
+        font-size: 1.2223em;
+    }
+
+    .content .button a .inside-button {
+        padding: 4px;
+    }
+
+    .content .button a {
+        font-weight: 650;
+        font-size: 1.056em;
+    }
+
+    .spinning-movies {
+        width: 100%;
+        float: left;
+        clear: both;
+        height: auto;
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-width: 1156px) {
+    .header .menu ul li {
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+
+    .content .article h1 {
+        font-size: 2.8687em;
+    }
+
+    .content .article h3 {
+        font-size: 2.6107em;
+    }
+
+    .content .article p {
+        font-size: 1.21em;
+    }
+
+    .sidebar .top-three-movies ul li a {
+        font-size: .9em;
+    }
+
+    .header .dropdown .dropdown-content {
+        min-width: 120px;
+    }
+
+    .header .dropdown .dropdown-content {
+        border-radius: 15px;
+    }
+
+    .spinning-movies {
+        width: 100%;
+        float: left;
+        clear: both;
+        height: auto;
+        min-height: 200px;
+        padding-top: 2%;
+    }
+
+    .spinning-movies .container .film {
+        width: 100%;
+        height: 21.7em;
+    }
+
+    .spinning-movies .container .film .film-back h2 {
+        margin-bottom: 10%;
+        font-size: .99em;
+    }
+    
+    /* _styling text inside the back side of spinning container; */
+    .spinning-movies .container .film .film-back div p {
+        margin-bottom: 10%;
+        margin-top: 10%;
+        font-size: .99em;
+    }
+    
+    /* _styling text inside the back side of spinning container; */
+    .spinning-movies .container .film .film-back div p span{
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 996px) {
+    .header .menu ul {
+        margin-left: 7%;
+    }
+    .header .menu ul li {
+        font-size: 1.01em;
+        line-height: 1.01em;
+    }
+
+    .header .dropdown .dropdown-content {
+        min-width: 110px;
+    }
+
+    .header .dropdown .dropdown-content {
+        border-radius: 15px;
+    }
+
+    .spinning-movies {
+        width: 100%;
+        float: left;
+        clear: both;
+        height: auto;
+        min-height: 150px;
+        padding-top: 2%;
+    }
+
+    .spinning-movies .container .film {
+        width: 100%;
+        height: 21.7em;
+    }
+
+    .spinning-movies .container .film .film-front img{
+        width: 100%;
+        min-height: 17.7em;
+    }
+
+    .spinning-movies .container .film .film-back h2 {
+        margin-bottom: 10%;
+        font-size: .99em;
+    }
+    
+    /* _styling text inside the back side of spinning container; */
+    .spinning-movies .container .film .film-back div p {
+        margin-bottom: 10%;
+        margin-top: 10%;
+        font-size: .99em;
+    }
+    
+    /* _styling text inside the back side of spinning container; */
+    .spinning-movies .container .film .film-back div p span{
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .header .menu ul {
+        margin-left: 7%;
+    }
+    .header .menu ul li {
+        font-size: .9125699em;
+        line-height: .9em;
+    }
+
+    .header .dropdown .dropdown-content {
+        min-width: 100px;
+    }
+
+    .header .dropdown .dropdown-content {
+        border-radius: 15px;
+    }
+
+    .spinning-movies {
+        width: 100%;
+        float: left;
+        clear: both;
+        height: auto;
+        min-height: 150px;
+        padding-top: 2%;
+    }
+
+    .spinning-movies .container .film {
+        width: 100%;
+        height: 21.7em;
+    }
+
+    .spinning-movies .container .film .film-front img{
+        width: 100%;
+        min-height: 17.7em;
+    }
+
+    .spinning-movies .container .film .film-back h2 {
+        margin-bottom: 10%;
+        font-size: .99em;
+    }
+    
+    /* _styling text inside the back side of spinning container; */
+    .spinning-movies .container .film .film-back div p {
+        margin-bottom: 10%;
+        margin-top: 10%;
+        font-size: .99em;
+    }
+    
+    /* _styling text inside the back side of spinning container; */
+    .spinning-movies .container .film .film-back div p span{
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content-container {
+        background-image: linear-gradient(45deg, #ffffff 82%, var(--cadmium-orange));
+    }
+
+    .content {
+        width: 100%;
+        margin: auto;
+        padding: 4%;
+    }
+
+    .header {
+        height: 20%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .header .menu ul {
+        text-align: center;
+    }
+
+    .header .menu ul li {
+        display: block;
+        margin-bottom: 1%;
+        font-size: 1.2em;
+    }
+
+    .content .article h1 {
+        font-size: 1.8687em;
+    }
+
+    .content .article h3 {
+        font-size: 1.6107em;
+    }
+
+    .content .article p {
+        font-size: 1.1em;
+    }
+
+    .content .button a {
+        font-weight: 650;
+        font-size: .9em;
+    }
+
+    .sidebar {
+        width: 50%;
+        margin: 5% 24%;
+    }
+
+    .sidebar .top-three-movies ul li a img {
+        max-width: 60%;
+        margin-right: 19.9%;
+        margin-left: 19.9%;
+    }
+
+    .spinning-movies {
+        width: 100%;
+        float: left;
+        clear: both;
+        height: auto;
+        /* min-height: 100px; */
+        padding-top: 2%;
+        padding-right: 5%;
+    }
+    
+    .spinning-movies .container .film {
+        width: 100%;
+        height: 14.7em;
+        min-width: 8em;
+    }
+
+    .spinning-movies .container .film .film-front img{
+        width: 100%;
+        min-height: 8em;
+    }
+    
+    .spinning-movies .container .film .film-back h2 {
+        margin-bottom: 7%;
+        font-size: .8em;
+    }
+    
+    /* _styling text inside the back side of spinning container; */
+    .spinning-movies .container .film .film-back div p {
+        margin-bottom: 7%;
+        margin-top: 7%;
+        font-size: .8em;
+    }
+    
+    /* _styling text inside the back side of spinning container; */
+    .spinning-movies .container .film .film-back div p span{
+        font-size: 1.1em;
+    }
+}

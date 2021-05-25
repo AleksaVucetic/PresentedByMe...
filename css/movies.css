@@ -1,0 +1,117 @@
+/* Mogu ja to! */
+/* _the font family is imported; */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+/* _creation of color variables; */
+:root {
+    --steel-teal: #588B8B;
+    --unbleached-silk: #FFD5C2;
+    --cadmium-orange: #F28F3B;
+    --cedar-chest: #C8553D;
+}
+
+/* _with '*', we set all containers to 'default' values; */
+* {
+    /* _the 'box-sizing' property defines how the width and height of an element are calculated: should they include padding and borders, or not; */
+    /* _'border-box' value indicates that the width and height properties (and min/max properties) include content, padding and border; */
+    box-sizing: border-box;
+
+    /* _the CSS margin properties are used to create space around elements, outside of any defined borders; */
+    margin: 0;
+
+    /* _the CSS padding properties are used to generate space around an element's content, inside of any defined borders; */
+    padding: 0;
+
+    /* _in order to set all those elements, we need to know how 'CSS - Box Model' works */
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    background-color: var(--steel-teal);
+}
+
+.main .name-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 3em;
+    background-color: #000000;
+}
+
+.main .name-container p {
+    position: relative;
+    font-variant: small-caps;
+    text-align: center;
+    font-family: 'Libre Baskerville';
+    font-size: 1.5em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000000, #ffffff, #000000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 4s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+}
+
+.main .big-container {
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    background: linear-gradient(180deg, #000000 70%, var(--steel-teal) 30%);
+}
+
+.main .big-container .text-container {
+    /* outline: 1px solid red; */
+    width: 40%;
+    font-family: 'Libre Baskerville';
+}
+
+.main .big-container .text-container h2 {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    color: var(--cadmium-orange);
+    font-variant: small-caps;
+}
+
+.main .big-container .text-container p {
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 10%;
+    font-size: 1em;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.main .big-container .iframe-container {
+    outline: 1px solid var(--steel-teal);
+    box-shadow: 20px -20px 100px var(--steel-teal);
+}
+
+@media screen and (max-width: 768px) {
+    .main .name-container p {
+        font-size: 1.3em;
+    }
+
+    iframe {
+        width: 433px;
+        height: 243px;
+    }
+}

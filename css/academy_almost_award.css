@@ -1,0 +1,276 @@
+/* Mogu ja to! */
+/* _the font family is imported; */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+/* _creation of color variables; */
+:root {
+    --steel-teal: #588B8B;
+    --unbleached-silk: #FFD5C2;
+    --cadmium-orange: #F28F3B;
+    --cedar-chest: #C8553D;
+}
+
+body {
+    background-image: linear-gradient(45deg, #ffffff 60%, var(--cadmium-orange));
+}
+
+h1 {
+    margin: 3%;
+    font-family: 'Libre Baskerville';
+    text-align: center;
+    font-size: 4.3125em;
+    text-transform: uppercase;
+    text-shadow: .0539215696em .0539215686em 0em #000000;
+    color: var(--cedar-chest);
+    word-spacing: .4em;
+}
+
+h1 span {
+    color: var(--cadmium-orange);
+    font-family: 'Pirata One';
+    text-shadow: .0539215696em .0539215686em 0em var(--steel-teal);
+    font-size: 4rem;
+}
+
+.text-container {
+    margin: 2% 6%;
+}
+
+.text-container section h3 {
+    font-size: 3em;
+    margin-bottom: 2%;
+    color: var(--steel-teal);
+}
+
+.text-container section p {
+    font-family: 'Libre Baskerville';
+    margin-bottom: 1.5%;
+    text-align: justify;
+}
+
+.container {
+    /* outline: 1px solid black; */
+    margin: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.button {
+    margin: 3%;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.7);
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 1% auto;
+    background: #fff;
+    border-radius: 20px;
+    width: 40%;
+    position: relative;
+    transition: all .5s ease-in-out;
+    overflow: visible;
+}
+
+.popup header {
+    background-color: #e9e9e9;
+    padding: 2%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: "futura book legacy","FuturaPT-Book",Futura,"Trebuchet MS",Arial,sans-serif;
+    font-weight: normal;
+    color: #C79F27;
+}
+
+.popup .close {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #C79F27;
+}
+
+.popup section {
+    background-color: #ffffff;
+    padding: 2%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.popup div {
+    background-color: #ffffff;
+    margin-bottom: 2%;
+    font-family: 'Arial Narrow';
+    font-weight: lighter;
+}
+
+.popup div:last-child {
+    margin-bottom: 0;
+}
+
+.popup div h3 {
+    color: #C79F27;
+}
+
+.popup div .movie {
+    font-family: "futura book legacy","FuturaPT-Book",Futura,"Trebuchet MS",Arial,sans-serif;
+    font-size: 1em;
+}
+
+.popup div .movie span {
+    color: var(--cedar-chest);
+}
+
+.popup div .director {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1156px) {
+    h1 {
+        font-size: 2.8687em;
+    }
+
+    h1 span {
+        color: var(--cadmium-orange);
+        font-family: 'Pirata One';
+        text-shadow: .0539215696em .0539215686em 0em var(--steel-teal);
+        font-size: 3rem;
+    }
+
+    .text-container section h3 {
+        font-size: 2em;
+        margin-bottom: 2%;
+        color: var(--steel-teal);
+    }
+
+    .popup {
+        width: 60%;
+    }
+
+    .popup header {
+        font-size: .8em;
+    }
+
+    .popup div .director {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 996px) {
+    h1 {
+        font-size: 2.8687em;
+    }
+
+    h1 span {
+        color: var(--cadmium-orange);
+        text-shadow: .0539215696em .0539215686em 0em var(--steel-teal);
+        font-size: 3rem;
+    }
+
+    .text-container section h3 {
+        font-size: 2em;
+        margin-bottom: 2%;
+        color: var(--steel-teal);
+    }
+
+    .popup {
+        width: 60%;
+    }
+
+    .popup header {
+        font-size: .8em;
+    }
+
+    .popup div .director {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    h1 {
+        font-size: 2.8687em;
+    }
+
+    h1 span {
+        color: var(--cadmium-orange);
+        font-family: 'Pirata One';
+        text-shadow: .0539215696em .0539215686em 0em var(--steel-teal);
+        font-size: 3rem;
+    }
+
+    .text-container section h3 {
+        font-size: 2em;
+        margin-bottom: 2%;
+        color: var(--steel-teal);
+    }
+
+    .popup {
+        width: 60%;
+    }
+
+    .popup header {
+        font-size: .8em;
+    }
+
+    .popup div .director {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .popup {
+        width: 90%;
+    }
+
+    h1 {
+        word-spacing: .4em;
+    }
+    
+    h1 span {
+        color: var(--cedar-chest);
+        text-shadow: .0539215696em .0539215686em 0em var(--unbleached-silk);
+        font-size: 2.5rem;
+    }
+    
+    .text-container section h3 {
+        font-size: 1.5em;
+    }
+
+    .text-container section p {
+        font-size: .9em;
+    }
+
+    .popup header {
+        font-size: .8em;
+    }
+
+    .popup div .director {
+        font-size: .9em;
+    }
+}
